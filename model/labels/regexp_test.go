@@ -1768,7 +1768,7 @@ func TestToNormalisedLower(t *testing.T) {
 		"AAAAAAAAAAAAAAAAAAAAAAAA":  "aaaaaaaaaaaaaaaaaaaaaaaa",
 		"cccccccccccccccccccccccC":  "cccccccccccccccccccccccc",
 		"ſſſſſſſſſſſſſſſſſſſſſſſſS": "sssssssssssssssssssssssss",
-		"ſſAſſa":                    "ssassa",
+		"ſſAſſa": 					 "ssassa",
 	}
 	for input, expectedOutput := range testCases {
 		require.Equal(t, expectedOutput, toNormalisedLower(input, nil))
